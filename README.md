@@ -14,7 +14,7 @@ This project demonstrates how to build a **Security Monitoring System** on AWS t
 ---
 
 ## 🏗️ Architecture Diagram
-[arch.png]
+![arch](arch.png)
 
 ---
 
@@ -49,4 +49,4 @@ Monitored Metric:
 - Unit:                                not specified
 - TreatMissingData:                    missing
 
-[email.png]
+![email.png](email.png)
