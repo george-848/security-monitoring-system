@@ -1,7 +1,7 @@
 # security-monitoring-system
 
 ## Overview
-This project demonstrates how to build a **Security Monitoring System** on AWS that detects suspicious activities and sends real-time alerts to administrators. The system uses **CloudTrail, CloudWatch, SNS, and Secrets Manager** to automate security monitoring in a scalable and secure way.
+This project demonstrates how to build a **Security Monitoring System** on AWS that detects suspicious activities and sends real-time alerts to administrators. The system uses **CloudTrail, CloudWatch, SNS, S3 and Secrets Manager** to automate security monitoring in a scalable and secure way.
 
 ---
 
@@ -10,7 +10,7 @@ This project demonstrates how to build a **Security Monitoring System** on AWS t
 - **AWS CloudWatch**: Creates metric filters and alarms based on specific CloudTrail events.
 - **AWS Secrets Manager**: Securely stores sensitive credentials like API keys or DB passwords and Tokens.
 - **Amazon SNS**: Sends notifications (email/SMS) when an alarm is triggered.
-
+- **S3 Bucket** to store all backups event logs.
 ---
 
 ## 🏗️ Architecture Diagram
@@ -33,6 +33,7 @@ This project demonstrates how to build a **Security Monitoring System** on AWS t
 4. **Alarms** are triggered when a filter condition is met.
 5. **SNS topic** sends an alert to a subscribed email or SMS.
 6. **Secrets Manager** ensures secure storage of any sensitive credentials required for integrations.
+4. **S3 Bucket** to store all the backups logs.
 
 
 ## 📧 Example Alert
